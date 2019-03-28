@@ -1,4 +1,4 @@
-package cn.xuweiteng.Thread;
+package cn.xuweiteng.Thread01;
 
 /**
  * 使用lambda表达式创建多线程

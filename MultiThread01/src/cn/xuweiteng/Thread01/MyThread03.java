@@ -1,4 +1,4 @@
-package cn.xuweiteng.Thread;
+package cn.xuweiteng.Thread01;
 
 /**
  * 实现Runnable接口重新模拟银行柜台功能

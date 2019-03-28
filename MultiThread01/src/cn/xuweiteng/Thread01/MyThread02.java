@@ -1,4 +1,4 @@
-package cn.xuweiteng.Thread;
+package cn.xuweiteng.Thread01;
 
 /**
  * Thread 模拟营业大厅叫号机程序
