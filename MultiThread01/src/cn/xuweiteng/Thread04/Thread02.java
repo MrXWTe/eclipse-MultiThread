@@ -1,7 +1,11 @@
 package cn.xuweiteng.Thread04;
 
 import java.util.concurrent.TimeUnit;
-
+/**
+ * 利用Jconsole检测线程状态
+ * @author MrXu
+ *
+ */
 public class Thread02 {
 
 	private final static Object THREAD = new Object();
