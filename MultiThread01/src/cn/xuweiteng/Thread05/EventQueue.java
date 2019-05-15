@@ -18,6 +18,7 @@ public class EventQueue {
 	
 	private final static int DEFAULT_MAX_EVENT = 10;
 	
+	
 	public EventQueue() {
 		this(DEFAULT_MAX_EVENT);
 	}
