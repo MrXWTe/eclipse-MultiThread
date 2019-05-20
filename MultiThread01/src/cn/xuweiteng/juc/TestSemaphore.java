@@ -12,7 +12,6 @@ public class TestSemaphore {
         Thread[] threads = new Thread[10];
         
         PrintQueue1 printQueue = new PrintQueue1();
-        
         for(int i = 0 ; i < 10 ; i++){
             threads[i] = new Thread(new Job1(printQueue),"Thread_" + i);
         }
