@@ -11,15 +11,12 @@ public class TestCountDownLatch {
 	public static void main(String[] args) throws InterruptedException {
 		final CountDownLatch latch = new CountDownLatch(5);
 		LatchDemo ld = new LatchDemo(latch);
-		
 		long startTime = System.currentTimeMillis();
 		
 		for (int i = 0; i < 5; i++) {
 			new Thread(ld).start();
 		}
-		
 		latch.await();
-		
 		long endTime = System.currentTimeMillis();
 		System.out.println("time:" + (endTime - startTime));
 	}
