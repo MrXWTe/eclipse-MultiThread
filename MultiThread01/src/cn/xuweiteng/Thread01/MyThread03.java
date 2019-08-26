@@ -13,7 +13,7 @@ public class MyThread03 implements Runnable{
 	private int index = 1;
 		
 	@Override
-	public void run() {
+	public /*synchronized*/ void run() {	// 加上synchronized后就可以实现线程同步
 		while(index < MAX) {
 			System.out.println("柜台：" + Thread.currentThread().getName() + "当前的号码是：" + (index++));
 		}

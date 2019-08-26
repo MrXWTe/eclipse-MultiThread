@@ -14,9 +14,9 @@ public class MyThread02  extends Thread{
 	
 	/**
 	 * 如果不对index做修改，则该数据线程不共享，每个线程都是1~50
-	 * private int index = 1;
+	 * 
 	 */
-	
+	//private int index = 1;
 	/**
 	 * 将index该为static，则数据共享，但此种修改方式不推荐
 	 * static变量生命周期很长，如果有很多数据需要共享则不适合

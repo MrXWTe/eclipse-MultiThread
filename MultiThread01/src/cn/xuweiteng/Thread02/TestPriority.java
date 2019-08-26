@@ -10,8 +10,14 @@ public class TestPriority {
 
 	public static void main(String[] args) {
 		Runnable r = ()->{
-			for(int i = 0; i<200; i++)
+			for(int i = 0; i<200; i++) {
+				try {
+					Thread.sleep(10);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 				System.out.println(Thread.currentThread().getName());
+			}
 		};
 		
 		Thread t1 = new Thread(r, "thread1");
